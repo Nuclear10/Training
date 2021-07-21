@@ -126,8 +126,10 @@ header img{
     position: absolute;
     left: 30px;
     top: 40px;
-    font-size: 1rem;
     display: none;
+    font-size: .8rem;
+    color: hsl(0, 75%, 68%);
+    font-style: unset;
 }
 
 .container form.error .error-icon{
@@ -173,8 +175,10 @@ header img{
     .container .left h1{
         font-size: 5rem;
         line-height: 5.5rem;
+        letter-spacing: 1.2rem;
     }
     .container .left p{
+        max-width: 470px;
         margin-left: 0;
         font-size: 1.1rem;
     }
@@ -182,6 +186,20 @@ header img{
         margin-left: 0;
     }
     .container form button{
-        width: 80px;
+        width: 90px;
+        right: -25%;
+    }
+    .container form input{
+        width: 120%;
+    }
+    .container form .error-icon{
+        left: 90%;
+        top: 27%;
+    }
+    .container form .error-text{
+        font-size: .8rem;
+        color: hsl(0, 75%, 68%);
+        font-style: unset;
+        font-family: 'Josefin Sans' , sans-serif;
     }
 }
