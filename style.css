@@ -114,10 +114,41 @@ header img{
     opacity: .8;
 }
 
+.container form .error-icon{
+    display: inline-block;
+    position: absolute;
+    top: 24%;
+    right: 85px;
+    display: none;
+}
+
+.container form .error-text{
+    position: absolute;
+    left: 30px;
+    top: 40px;
+    font-size: 1rem;
+    display: none;
+}
+
+.container form.error .error-icon{
+    display: block;
+}
+
+.container form.error .error-text{
+    display: block;
+}
+
+.container form.error input{
+    border: 2px solid hsl(0, 93%, 68%);
+}
+
 @media only screen and (min-width: 768px){
     header{
         position: absolute;
         padding-left: 10%;
+    }
+    header img{
+        width: 180px;
     }
     .container{
         flex-direction: row;
